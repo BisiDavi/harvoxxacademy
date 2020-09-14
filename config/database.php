@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Str;
 
+$url = getenv("CLEARDB_DATABASE_URL");
+$host = "us-cdbr-east-02.cleardb.com";
+$username = "bc65ba7fc65453";
+$password = "26d56a8f";
+$database = "heroku_cf6769619c950a7";
+
 return [
 
     /*
@@ -15,7 +21,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('CLEARDB_DATABASE_URL', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -45,15 +51,17 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'url' => env($url, 'DATABASE_URL'),
+            'host' => env($host, '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env($database, 'forge'),
+            'username' => env($username, 'forge'),
+            'password' => env($password, ''),
             'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
+            // 'charset' => 'utf8mb4',
+            // 'collation' => 'utf8mb4_unicode_ci',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
             'prefix' => '',
             'prefix_indexes' => true,
             'strict' => true,
