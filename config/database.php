@@ -21,7 +21,7 @@ return [
     |
     */
 
-    'default' => env('CLEARDB_DATABASE_URL', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -51,12 +51,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env($url, 'DATABASE_URL'),
-            'host' => env($host, '127.0.0.1'),
+            'url' => $url,
+            'host' => $host,
             'port' => env('DB_PORT', '3306'),
-            'database' => env($database, 'forge'),
-            'username' => env($username, 'forge'),
-            'password' => env($password, ''),
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
             'unix_socket' => env('DB_SOCKET', ''),
             // 'charset' => 'utf8mb4',
             // 'collation' => 'utf8mb4_unicode_ci',
