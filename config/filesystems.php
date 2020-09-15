@@ -54,7 +54,7 @@ return [
             'driver' => 'local',
             'root' => storage_path('app/public'),
             // 'url' => env('APP_URL').'/public/storage',
-            asset(Voyager::imgae('')),
+            asset(Voyager::image('')),
             'visibility' => 'public',
         ],
 
