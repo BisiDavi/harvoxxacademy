@@ -1,5 +1,7 @@
 <?php
 
+use TCG\Voyager\Facades\Voyager;
+
 return [
 
     /*
@@ -51,7 +53,8 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/public/storage',
+            // 'url' => env('APP_URL').'/public/storage',
+            asset(Voyager::imgae('')),
             'visibility' => 'public',
         ],
 
