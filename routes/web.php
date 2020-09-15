@@ -20,6 +20,8 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/about', [AboutController::class, 'index']);
 
+Route::get('/gallery', [GalleryController::class, 'index']);
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
