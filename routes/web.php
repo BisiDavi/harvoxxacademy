@@ -14,7 +14,7 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function (){
     return view('home');
 });
 

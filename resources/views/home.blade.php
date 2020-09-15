@@ -12,7 +12,7 @@
 
 @section('content')
 
-  @include('HomeSlider')
+  @include('homeslider')
 
   <div class="container-fluid" id="main">
     <div class="row about-academy" id="about-academy">
@@ -53,16 +53,16 @@
                 <p></p>
               </div>
               <!-- <div class="card shadow-lg mb-3 bg-white rounded new-event">
-                              <img class="img-fluid" src="assets/img/event.png" />
-                            </div>
-                            <div class="card shadow-lg mb-3 bg-white rounded  event-3">
-                              <img class="img-fluid" src="assets/img/event.png" />
-                            </div> -->
+                                  <img class="img-fluid" src="assets/img/event.png" />
+                                </div>
+                                <div class="card shadow-lg mb-3 bg-white rounded  event-3">
+                                  <img class="img-fluid" src="assets/img/event.png" />
+                                </div> -->
             </div>
           </div>
         </div>
       </div>
-
+      {{--
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
         <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
           <div class="section-title">
@@ -86,42 +86,42 @@
             @endforeach
           </div>
         </div>
-      </div>
+      </div> --}}
 
       <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
-                      <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
-                        <div class="section-title">
-                          <h3 class="text-center">Blog</h3>
-                        </div>
-                        <div data-aos="fade-up" id="blogcontent"  data-aos-delay="200"  class="row">
-                          <div class="d-flex blog-post">
-                            <img  class="rounded img-fluid float-left p-3"src="assets/img/Rectangle 21.png"/>
-                            <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
-                          </div>
-                          <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
-                        </div>
-                        <div class="border border-gray m-3"></div>
+                          <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
+                            <div class="section-title">
+                              <h3 class="text-center">Blog</h3>
+                            </div>
+                            <div data-aos="fade-up" id="blogcontent"  data-aos-delay="200"  class="row">
+                              <div class="d-flex blog-post">
+                                <img  class="rounded img-fluid float-left p-3"src="assets/img/Rectangle 21.png"/>
+                                <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
+                              </div>
+                              <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
+                            </div>
+                            <div class="border border-gray m-3"></div>
 
-                        <div data-aos="fade-up" id="blogcontent" data-aos-delay="300"  class="row d-flex">
-                          <div class="d-flex blog-post">
-                            <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
-                            <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
-                          </div>
-                          <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
-                        </div>
-                        <div class="border border-gray m-3"></div>
+                            <div data-aos="fade-up" id="blogcontent" data-aos-delay="300"  class="row d-flex">
+                              <div class="d-flex blog-post">
+                                <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
+                                <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
+                              </div>
+                              <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
+                            </div>
+                            <div class="border border-gray m-3"></div>
 
-                        <div data-aos="fade-up" id="blogcontent" data-aos-delay="400"  class="row d-flex post-3">
-                          <div class="d-flex blog-post">
-                            <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
-                            <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
+                            <div data-aos="fade-up" id="blogcontent" data-aos-delay="400"  class="row d-flex post-3">
+                              <div class="d-flex blog-post">
+                                <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
+                                <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
+                              </div>
+                              <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
+                            </div>
                           </div>
-                          <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
                         </div>
                       </div>
-                    </div>
-                  </div>
-             -->
+                 -->
       <!-- ======= Services Section ======= -->
       <section id="services" class="services section-bg">
         <div class="container">
