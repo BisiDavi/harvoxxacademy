@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EnrollController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,9 @@ Route::get('/gallery', [GalleryController::class, 'index']);
 
 Route::get('/contact', [ContactController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'contactform']);
+
+Route::get('/enroll', [EnrollController::class, 'index']);
+Route::post('/enroll', [EnrollController::class, 'subscribe']);
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
